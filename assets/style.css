@@ -18,6 +18,12 @@ a{
 	.dropdown-large{ min-width:500px; }
 }
 
-#menugauche-alim, #menugauche-disquedur, #menugauche-proco, #menugauche-ram{
+.menugauche{
     display :none;
+}
+.menugauche select{
+    display : block
+}
+#menugauche-alim{
+    display : block;
 }

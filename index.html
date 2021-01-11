@@ -61,16 +61,20 @@
     <div class="container ml-md-0">
         <div class="row">
             <aside class="mr-md-3 col-12 col-md-2 text-left">
-                <div id="menugauche-alim">
-                    <ul>
+                <div id="menugauche-alim" class="menugauche">
+                    <form action="">
                         <p>Alimentation</p>
-                        <li>Marque</li>
-                        <li>Puissance</li>
+                        <label for="">Marque : </label><select class="form-control" name="fab-alim" id="fab-alim" value="">
+                            <option disabled selected></option>
+                            <option value="corsair">Corsair</option>
+                            <option value="bequiet">Bequiet!</option>
+                        </select>
+                        <label for="">Puissance</label><input type="range">
                         <li>Modulaire</li>
                         <li>Prix</li>
-                    </ul>
+                    </form>
                 </div>
-                <div id="menugauche-disquedur">
+                <div id="menugauche-disquedur" class="menugauche">
                     <ul>
                         <p>Disque SSD</p>
                         <li>Marque</li>
@@ -79,7 +83,7 @@
                         <li>Prix</li>
                     </ul>
                 </div>
-                <div id="menugauche-proco">
+                <div id="menugauche-proco" class="menugauche">
                     <ul>
                         <p>Processeur</p>
                         <li>Marque</li>
@@ -88,7 +92,7 @@
                         <li>Prix</li>
                     </ul>
                 </div>
-                <div id="menugauche-ram">
+                <div id="menugauche-ram" class="menugauche">
                     <ul>
                         <p>Mémoire Vive</p>
                         <li>Marque</li>
@@ -96,13 +100,27 @@
                         <li>Capacité</li>
                         <li>Prix</li>
                     </ul>
-
                 </div>
 
 
 
             </aside>
             <main class="row col-12 col-md-10">
+                <div class="card m-2 col-12  border-0">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="https://via.placeholder.com/300" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body col-md-7 pl-3">
+                            <h4 class="card-title"><a class="lien-article" href="./detail_article.html">Titre article</a></h4>
+                            <p class="card-text card-description"></p>
+                        </div>
+                        <div class="card-body col-md-2 pl-3">
+                            <p class="card-title">Prix</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
                 <div class="card m-2 col-12  border-0">
                     <div class="row no-gutters">
                         <div class="col-md-3">
