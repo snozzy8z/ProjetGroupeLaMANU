@@ -55,19 +55,20 @@
                         <p class="mb-4">Or use your account</p>
                         <div class="form-group text-center">
                             <div>
-                                <input type="email" class="form-control bg-light mb-3  " style
-                                    placeholder="Enter email">
+                                <input type="text" id="name" class="form-control bg-light mb-3  " style
+                                    placeholder="Name">
                                 <div class="form-group">
-                                    <input type="password" class="form-control bg-light" id="exampleInputPassword1"
+                                    <input type="password" id="password" class="form-control bg-light" id="exampleInputPassword1"
                                         placeholder="Password">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group form-check text-center">
-                            <a style="text-decoration: none;" href="#">Forgot password ?</a>
+                            <a style="text-decoration: none;" href="./Inscription.html">
+                                Not registered ?</a>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn mb-5 px-5"
+                            <button type="button" onclick="getInfo()" class="btn mb-5 px-5"
                                 style="background-color: orangered; border-radius: 20px; text-decoration: white;"> Log
                                 in </button>
                         </div>
@@ -86,6 +87,7 @@
     <footer>
 
     </footer>
+    <script src="assets/main.js"></script>
     <script src="https://kit.fontawesome.com/2c087d4514.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
