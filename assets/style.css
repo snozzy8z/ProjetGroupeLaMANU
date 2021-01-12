@@ -12,7 +12,8 @@ ul{
 a{
     text-decoration: none;
 }
-.dropdown-large{ padding:20px; }
+.dropdown-large{ padding:20px;
+    min-width:500px; }
 
 @media all and (min-width: 992px) {
 	.dropdown-large{ min-width:500px; }
@@ -24,8 +25,9 @@ a{
 .menugauche select{
     display : block
 }
-#menugauche-alim{
+#menugauche-proco{
     display : block;
+}
 footer {
     background: #3a3a3a;
     color: #fff;
