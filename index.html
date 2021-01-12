@@ -14,7 +14,7 @@
 <body>
     <header>
         <h1 class="text-center m-0 focus-in-expand-fwd"
-            style="background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%); height:120px;">Mon site</h1>
+            style="background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%); height:120px;">Site de vente qui déchire</h1>
         <nav class="row navbar navbar-expand-lg navbar-dark bg-dark ">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,12 +34,12 @@
                             <p>Pièces</p>
                             <div class=" row">                                
                                 <div class="col">                                    
-                                    <a id="menu-alim" class="dropdown-item" href="#">Alimentation</a>
-                                    <a id="menu-disquedur" class="dropdown-item" href="#">Disque dur</a>
+                                    <a id="menu-alim" class="dropdown-item tracking-in-contract-bck-top" href="#">Alimentation</a>
+                                    <a id="menu-disquedur" class="dropdown-item tracking-in-contract-bck-bottom" href="#">Disque dur</a>
                                 </div>
                                 <div class="col">
-                                    <a id="menu-processeur"class="dropdown-item" href="#">Processeur</a>
-                                    <a id="menu-ram" class="dropdown-item" href="#">Mémoire PC</a>
+                                    <a id="menu-processeur"class="dropdown-item tracking-in-contract-bck-top" href="#">Processeur</a>
+                                    <a id="menu-ram" class="dropdown-item tracking-in-contract-bck-bottom" href="#">Mémoire PC</a>
                                 </div>
                             </div>  
                         </div>
@@ -54,10 +54,11 @@
                         <a class="nav-link" href="./form.html">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
-                </form>
+                <div class="panier">
+                    <a href="./panier.html">
+                        <button type="button" class="btn btn-light mr-2"><i class="fas fa-shopping-cart mr-1"></i>Panier<span> 0</span></button>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
@@ -113,7 +114,7 @@
                     </ul>
                 </div>
             </aside>
-            <main class="row col-12 col-md-10">
+            <main class="main row col-12 col-md-10">
                 <div class="card m-2 col-12  border-0">
                     <div class="row no-gutters">
                         <div class="col-md-3">
@@ -126,7 +127,9 @@
                         <div class="card-body col-md-2 pl-3">
                             <p class="card-title">Prix</p>
                             <p class="card-text"></p>
+                            <button type="button"  class="btn btn-primary mt-5">Acheter</button>
                         </div>
+                        <div></div>
                     </div>
                 </div>
                 <div class="card m-2 col-12  border-0">
@@ -141,6 +144,7 @@
                         <div class="card-body col-md-2 pl-3">
                             <p class="card-title">Prix</p>
                             <p class="card-text"></p>
+                            <button type="button"  class="btn btn-primary mt-5">Acheter</button>
                         </div>
                     </div>
                 </div>
@@ -205,6 +209,7 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/panier.js"></script>
     <script src="./assets/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
