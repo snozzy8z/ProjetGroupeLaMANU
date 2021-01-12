@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <!-- Cédric+jeremy CSS -->
     <link rel="stylesheet" href="assets/style.css" />
-    <!-- Bootstrap JS -->
-   
-   
-    
-    
     <title>site de vente qui déchire</title>
 </head>
 
@@ -81,13 +76,31 @@
                             <option value="bequiet">Bequiet!</option>
                         </select>
                     </div>
-                        <label for="puissance-alim">Puissance :</label><input id="puissance-alim" type="range" class="col-12">
+                        <label for="puissance-alim">Puissance mini : </label> <span id="puissancealim"></span>W
+                        <input id="puissance-alim" type="range" class="col" max="900" min="80" list="list-puissance">
+                        <datalist id="list-puissance">
+                            <option value="80">
+                            <option value="192">
+                            <option value="300">
+                            <option value="350">
+                            <option value="400">
+                            <option value="450">
+                            <option value="500">
+                            <option value="700">
+                            <option value="800">
+                            <option value="900">
+                        </datalist>
                         <label for="alimmodulaire1">Modulaire :</label>
                         <div class="input-group mb-3">
                         <input type="radio" id="alimmodulaire1" name="alimmodulaire" class="col-md-2">Oui
                         <input type="radio" id="alimmodulaire0" name="alimmodulaire" class="col-md-2 offset-md-2">Non
                     </div>
-                        <label for="rangeprix-alim">Prix :</label><input id="rangeprix-alim" type="range" class="col-12">
+                        <label for="rangeprix-alim">Prix :</label>
+                        <select class="form-control" id="rangeprix-alim">
+                            <option disabled selected>Prix</option>
+                            <option value="more150"> > 150€</option>
+                            <option value="less150"> < 150€ </option>
+                        </select>
                     </form>
                 </div>
                 <div id="menugauche-disquedur" class="menugauche">
@@ -109,7 +122,11 @@
                         <label for="rangecapassd">Capacité</label>
                         <input id="rangecapassd" type="range" class="col-12">
                         <label for="rangeprix-ssd">Prix</label>
-                        <input id="rangeprix-ssd" type="range" class="col-12">
+                        <select class="form-control" id="rangeprix-ssd">
+                            <option disabled selected>Prix</option>
+                            <option value="more150"> > 150€</option>
+                            <option value="less150"> < 150€ </option>
+                        </select>
                     </form>
                 </div>
                 <div id="menugauche-proco" class="menugauche">
@@ -133,8 +150,11 @@
                         </select>
 
                         <label for="rangeprix-proc">Prix</label>
-                        <input id="rangeprix-proc" type="range" class="col-12">
-
+                        <select class="form-control" id="rangeprix-proc">
+                            <option disabled selected>Prix</option>
+                            <option value="more150"> > 150€</option>
+                            <option value="less150"> < 150€ </option>
+                        </select>
                     </form>
                 </div>
                 <div id="menugauche-ram" class="menugauche">
@@ -158,9 +178,12 @@
 
                         <label for="">Capacité</label>
                         <input id="rangeprix-proc" type="range" class="col-12">
-                        <label for="">Prix</label>
-                        <input id="rangeprix-proc" type="range" class="col-12">
-
+                        <label for="rangeprix-ram">Prix</label>
+                        <select class="form-control" id="rangeprix-ram">
+                            <option disabled selected>Prix</option>
+                            <option value="more150"> > 150€</option>
+                            <option value="less150"> < 150€ </option>
+                        </select>
 
                     </form>
                 </div>
