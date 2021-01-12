@@ -1,3 +1,31 @@
+main .card{
+    background: #F2F6EE;
+}
+aside{
+    background-color: #F2F6EE;
+    min-height: 200px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.dropdown-large{ padding:20px; }
+
+@media all and (min-width: 992px) {
+	.dropdown-large{ min-width:500px; }
+}
+
+.menugauche{
+    display :none;
+}
+.menugauche select{
+    display : block
+}
+#menugauche-alim{
+    display : block;
 footer {
     background: #3a3a3a;
     color: #fff;

@@ -5,13 +5,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
-    <!-- Cédric CSS -->
+    <!-- Cédric+jeremy CSS -->
     <link rel="stylesheet" href="assets/style.css" />
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>site de vente qui déchire</title>
 </head>
 
 <body>
@@ -29,8 +29,26 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./Connexion.html">Connexion <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tous nos produits
+                        </a>
+                        <div class="dropdown-menu dropdown-large" aria-labelledby="navbarDropdown">
+                            <p>Pièces</p>
+                            <div class=" row">                                
+                                <div class="col">                                    
+                                    <a id="menu-alim" class="dropdown-item" href="#">Alimentation</a>
+                                    <a id="menu-disquedur" class="dropdown-item" href="#">Disque dur</a>
+                                </div>
+                                <div class="col">
+                                    <a id="menu-processeur"class="dropdown-item" href="#">Processeur</a>
+                                    <a id="menu-ram" class="dropdown-item" href="#">Mémoire PC</a>
+                                </div>
+                            </div>  
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Connexion</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./Inscription.html">Inscription</a>
@@ -46,103 +64,91 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <aside id="recherche">
-
-
-
-        </aside>
-        <main>
-            <div class="card card1">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card2">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card3">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card4">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card5">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card6">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card7">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card8">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card9">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card10">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card11">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-            <div class="card card12">
-                <img src="" alt="" class="card-img-top">
-                <card-body>
-                    <h5 class="cart-title"><a href=""></a></h5>
-                    <p class="card-text"></p>
-                </card-body>
-            </div>
-
-
-        </main>
-        
-
-
+    <div class="container ml-md-0">
+        <div class="row">
+            <aside class="mr-md-3 col-12 col-md-2 text-left">
+                <div id="menugauche-alim" class="menugauche">
+                    <form action="">
+                        <p>Alimentation</p>
+                        
+                        <label for="fab-alim">Marque : </label>
+                        <div class="input-group mb-3">
+                        <select class="form-control" name="fab-alim" id="fab-alim" value="">
+                            <option disabled selected></option>
+                            <option value="corsair">Corsair</option>
+                            <option value="bequiet">Bequiet!</option>
+                        </select>
+                    </div>
+                        <label for="">Puissance :</label><input type="range" class="col-12">
+                        <label for="">Modulaire :</label>
+                        <div class="input-group mb-3">
+                        <input type="radio" name="alimmodulaire">Oui
+                        <input type="radio" name="alimmodulaire">Non
+                    </div>
+                        <label for="">Prix :</label><input type="range" class="col-12">
+                    </form>
+                </div>
+                <div id="menugauche-disquedur" class="menugauche">
+                    <ul>
+                        <p>Disque SSD</p>
+                        <li>Marque</li>
+                        <li>Format</li>
+                        <li>Capacité</li>
+                        <li>Prix</li>
+                    </ul>
+                </div>
+                <div id="menugauche-proco" class="menugauche">
+                    <ul>
+                        <p>Processeur</p>
+                        <li>Marque</li>
+                        <li>Nombre de coeurs</li>
+                        <li>Socket</li>
+                        <li>Prix</li>
+                    </ul>
+                </div>
+                <div id="menugauche-ram" class="menugauche">
+                    <ul>
+                        <p>Mémoire Vive</p>
+                        <li>Marque</li>
+                        <li>type de mémoire</li>
+                        <li>Capacité</li>
+                        <li>Prix</li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="row col-12 col-md-10">
+                <div class="card m-2 col-12  border-0">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="https://via.placeholder.com/300" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body col-md-7 pl-3">
+                            <h4 class="card-title"><a class="lien-article" href="./detail_article.html">Titre article</a></h4>
+                            <p class="card-text card-description"></p>
+                        </div>
+                        <div class="card-body col-md-2 pl-3">
+                            <p class="card-title">Prix</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card m-2 col-12  border-0">
+                    <div class="row no-gutters">
+                        <div class="col-md-3">
+                            <img src="https://via.placeholder.com/300" class="card-img" alt="...">
+                        </div>
+                        <div class="card-body col-md-7 pl-3">
+                            <h4 class="card-title"><a class="lien-article" href="./detail_article.html">Titre article</a></h4>
+                            <p class="card-text card-description"></p>
+                        </div>
+                        <div class="card-body col-md-2 pl-3">
+                            <p class="card-title">Prix</p>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>        
     </div>
     <footer>
         <div class="footer-top">
@@ -179,7 +185,7 @@
                     <div class="col-lg-4 col-sm-6 newsletter">
                         <h4>Notre Newsletter</h4>
                         <p>Restez informés de nos dernières trouvailles à prix cassé sur le marché de l'informatique. </p>
-                        <form action="#" method="post"><input type="email" name="email" /><input type="submit" value="Inscription" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/></form>
+                        <form action="#"><input type="email" name="email" /><input type="submit" value="Inscription" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/></form>
                         <div class="social-links mt-3">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -196,7 +202,7 @@
                 <div class="row">
                     <div class="col-12">
                         <p class="text-center mb-2">&copy; Copyright <strong>CTC Team</strong>. Tous droits réservés</p>
-                        <p class="text-center mb-0">Crée par <a href="https://www.youporn.fr/" target="_blank">Cédric, Tony & Christophe</a></p>
+                        <p class="text-center mb-0">Crée par <a href="https://www.youporn.com/" target="_blank">Cédric, Tony & Christophe</a></p>
                     </div>
                 </div>
             </div>
@@ -208,5 +214,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+        <script src="./assets/script.js"></script>
 </body>
 </html>
