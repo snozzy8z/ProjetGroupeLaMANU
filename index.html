@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>site de vente qui déchire</title>
 </head>
 
 <body>
@@ -70,14 +70,22 @@
                 <div id="menugauche-alim" class="menugauche">
                     <form action="">
                         <p>Alimentation</p>
-                        <label for="">Marque : </label><select class="form-control" name="fab-alim" id="fab-alim" value="">
+                        
+                        <label for="fab-alim">Marque : </label>
+                        <div class="input-group mb-3">
+                        <select class="form-control" name="fab-alim" id="fab-alim" value="">
                             <option disabled selected></option>
                             <option value="corsair">Corsair</option>
                             <option value="bequiet">Bequiet!</option>
                         </select>
-                        <label for="">Puissance</label><input type="range">
-                        <li>Modulaire</li>
-                        <li>Prix</li>
+                    </div>
+                        <label for="">Puissance :</label><input type="range" class="col-12">
+                        <label for="">Modulaire :</label>
+                        <div class="input-group mb-3">
+                        <input type="radio" name="alimmodulaire">Oui
+                        <input type="radio" name="alimmodulaire">Non
+                    </div>
+                        <label for="">Prix :</label><input type="range" class="col-12">
                     </form>
                 </div>
                 <div id="menugauche-disquedur" class="menugauche">
