@@ -1,4 +1,5 @@
-//ajout event listener sur menu pour filtres du aside
+$(function() {
+    //ajout event listener sur menu pour filtres du aside
 var dropdownmenu = document.getElementsByClassName("dropdown-item");
 for (const key in dropdownmenu) {
     if (Object.hasOwnProperty.call(dropdownmenu, key)) {
@@ -35,3 +36,10 @@ for (const key in dropdownmenu) {
         })
     }
 }
+var test = document.getElementById("puissance-alim")
+test.addEventListener("change", function(){
+    document.getElementById("puissancealim").innerHTML = test.value;
+
+
+})
+});
