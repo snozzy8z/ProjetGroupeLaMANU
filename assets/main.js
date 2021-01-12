@@ -19,6 +19,7 @@ function getInfo() {
     for (i = 0; i < admin.length; i++) {
         if (username == admin[i].username && password == admin[i].password) {
             alert(username + " is logged in !!!")
+            break;
         } else {
             alert("incorrect username or password ! Sign up !")
         }
