@@ -9,7 +9,7 @@ var product = [
     },
     {
         name : 'Alimentation be quiet',
-        tag : 'alimbe quiet',
+        tag : 'alimbequiet',
         price : '30',
         inCart: 0
     },
