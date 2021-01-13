@@ -59,6 +59,7 @@ fetch("./assets/listearticle.json")
         var divright =  document.createElement("div");
         var titreprix =  document.createElement("p");
         var prix =  document.createElement("p");
+        var button = document.createElement("button");
         card.setAttribute("class", "card m-2 col-12 border-0");
         divcont.setAttribute("class", "row no-gutters");
         divleft.setAttribute("class", "col-md-3");
@@ -70,11 +71,12 @@ fetch("./assets/listearticle.json")
         divright.setAttribute("class", "card-body col-md-2 pl-3");
         titreprix.setAttribute("class", "card-title");
         prix.setAttribute("class", "card-text font-weight-bold");
+        button.setAttribute("class", "btn btn-primary mt-5");
         img.src= "./assets/images/"+ article.imageArticle;
-    
+        button.textContent = "Acheter";
         descr.textContent = article.descArticle;
         lientitre.href = "./detail_article.html?id="+article.idArticle;
-        lientitre.textContent = article.prixArticle;
+        lientitre.textContent = article.nomArticle;
         titreprix.textContent = "Prix :"
         prix.textContent = article.prixArticle;
         //on mets en forme tout le bousin
@@ -84,6 +86,7 @@ fetch("./assets/listearticle.json")
         divmid.appendChild(descr);
         divright.appendChild(titreprix);
         divright.appendChild(prix);
+        divright.appendChild(button)
         divcont.appendChild(divleft)
         divcont.appendChild(divmid)
         divcont.appendChild(divright)
