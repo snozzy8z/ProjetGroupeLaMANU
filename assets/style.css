@@ -385,3 +385,32 @@ footer .footer-bottom a {
   h1{
       font-family: 'Times New Roman', Times, serif
   }
+
+.inputglobconnexion{
+    position: absolute;
+    top: 59.5%;
+    color:black;
+    left: 86%;
+    font-size: 21px; 
+    width: 50px;
+    }
+
+.inputglobinscription1{
+        position: absolute;
+        top: 69%;
+        color:black;
+        left: 86%;
+        font-size: 21px; 
+        width: 50px;
+}
+
+.inputglobinscription2{
+    position: absolute;
+    top: 78.5%;
+    color:black;
+    left: 86%;
+    font-size: 21px; 
+    width: 50px;
+}
+
+    
