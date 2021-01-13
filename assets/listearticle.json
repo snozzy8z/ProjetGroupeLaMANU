@@ -68,5 +68,19 @@
             "watt":"550",
             "modulaire":0         
         }
-    }
+    },
+    {
+        "idArticle": 6,
+        "nomArticle": " Corsair CV550 80PLUS Bronze ",
+        "descArticle": "L'alimentation Corsair CV550 80PLUS Bronze bénéficie d'un câblage gainé noir pour s'intégrer en toute discrétion dans votre boitier. Les alimentations de la gamme Corsair CV sont idéales pour votre nouvel ordinateur grâce à leur certification 80 PLUS Bronze qui permet de fournir des tensions stables",
+        "prixArticle": "1235.95",
+        "imageArticle":"proco1.jpg",
+        "marqueArticle": "corsair",
+        "typeArticle":
+            {
+                "type":"processeur",
+                "nbCoeurs":"64"
+                      
+            }
+        }
 ]
