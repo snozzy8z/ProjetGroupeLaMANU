@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +9,7 @@
     <!-- Cédric CSS -->
     <link rel="stylesheet" href="assets/style.css" />
     <!-- Bootstrap JS -->
-    <title>site de vente qui déchire</title>
+    <title>Site de vente qui déchire</title>
 </head>
 
 <body>
@@ -186,7 +187,9 @@
                     <div class="col-lg-4 col-sm-6 newsletter">
                         <h4>Notre Newsletter</h4>
                         <p>Restez informés de nos dernières trouvailles à prix cassé sur le marché de l'informatique. </p>
-                        <form action="#"><input type="email" name="email" /><input type="submit" value="Inscription" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/></form>
+                        <form action="#"><input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /><input type="submit" name="button_mail" id="button_mail"
+                            value="Inscription" />
+                        </form>
                         <div class="social-links mt-3">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
