@@ -1,5 +1,5 @@
 $(function() {
-    var main = document.querySelector('main');
+var main = document.querySelector('main');
 //on charge tout le json au chargement de la page
 ChargementJson("all");
 //ajout event listener sur menu pour filtres du aside
@@ -50,7 +50,38 @@ for (const key in dropdownmenu) {
 var test = document.getElementById("puissance-alim")
 test.addEventListener("change", function(){
     document.getElementById("puissancealim").innerHTML = test.value;
-})
+});
+//filtre par prix. faudra faire le reste un jour
+var inputprix = document.getElementsByClassName("rangeprix");
+
+for (const iterator of inputprix) {
+    iterator.addEventListener("input", function(){
+        console.log(iterator.options.selectedIndex);
+        var jsp = document.getElementsByTagName("article");
+        if(iterator.options.selectedIndex==1){
+            for (const iterator of jsp) {
+                if (iterator.dataset.prix>150) {
+                    iterator.style.display= "block";
+                }
+                else{
+                    iterator.style.display= "none";
+                }
+            }     
+        }else{
+            for (const iterator of jsp) {
+                if (iterator.dataset.prix<=150) {
+                    iterator.style.display= "block";
+                }
+                else{
+                    iterator.style.display= "none";
+                }
+            }
+        }
+    })
+}
+
+
+
 //chargement Json pour remplir page
 function ChargementJson(typechargement){
 var main = document.querySelector('main');
@@ -59,7 +90,6 @@ fetch("./assets/listearticle.json")
 .then(data => {
     for (const article of data) {
         var card="";
-        console.log(typechargement)
         switch (typechargement) {            
             case "alim":
                 if (article.typeArticle.type == typechargement) {  
@@ -112,6 +142,7 @@ function CreateArticle(article){
     var button = document.createElement("button");
     card.setAttribute("id", "article"+article.idArticle);
     card.setAttribute("class", "card m-2 col-12 border-0");
+    card.setAttribute("data-prix",article.prixArticle)
     divcont.setAttribute("class", "row no-gutters");
     divleft.setAttribute("class", "col-md-3");
     img.setAttribute("class", "card-img");
