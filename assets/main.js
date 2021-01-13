@@ -10,6 +10,12 @@ var button_mail = document.getElementById('button_mail');
 // Bouton Inscription au site
 var valid_inscript = document.getElementById('valid_inscript');
 
+// Bouton Oeil pour afficher / masquer le mot de passe
+var oeil = document.getElementById('oeil');
+
+// Bouton Oeil1 pour afficher / masquer le mot de passe
+var oeil1 = document.getElementById('oeil1');
+
 // Contrôle des identifiants quand le user cliquer sur le bouton Login de la page Connexion
 if (log != undefined) {
     log.onclick = function () {
@@ -19,10 +25,18 @@ if (log != undefined) {
         let username1 = 'jérémy';
         let username2 = 'cédric';
         let username3 = 'tony';
+        if(username == '') { alert('Veuillez saisir votre nom d\'utilisateur.'); return false; }
+        if(password == '') { alert('Veuillez saisir votre mot de passe.'); return false; }
         if (password == password1 && (username == username1 || username == username2 || username == username3))
-            alert('Bienvenue sur YouPorn ' + username);
-        else
+        {
+            mess_info.innerHTML = '<div class="alert alert-success">Bienvenue '+ username +', vous êtes désormais connecté sur notre site.</div>';
+            setTimeout(function(){ document.location.href="index.html"; }, 3000);
+            return true;
+        }
+        else {
             alert('Identifiants de connexion incorrects !');
+            return false;
+        }
     };
 };
 
@@ -99,5 +113,45 @@ function ValidateEmail(mail)
   }
     alert("You have entered an invalid email address!")
     return (false)
+};
+
+// Affichage / Masquage du mot de passe
+if (oeil != undefined) {
+    oeil.onclick = function () {
+        // Bouton Oeil pour afficher / masquer le mot de passe
+        var oeil = document.getElementById('oeil');
+        var input = document.getElementById('password'); 
+        let statut_oeil = oeil.className;
+        if(statut_oeil=='fa fa-eye-slash') oeil.className='fa fa-eye';
+        if(statut_oeil=='fa fa-eye') oeil.className='fa fa-eye-slash';
+        if (input.type === 'password')
+        { 
+            input.type = "text"; 
+        } 
+        else
+        { 
+            input.type = "password"; 
+        } 
+    };
+};
+
+// Affichage / Masquage du mot de passe
+if (oeil1 != undefined) {
+    oeil1.onclick = function () {
+        // Bouton Oeil pour afficher / masquer le mot de passe
+        var oeil1 = document.getElementById('oeil1');
+        var input = document.getElementById('password2'); 
+        let statut_oeil1 = oeil1.className;
+        if(statut_oeil1=='fa fa-eye-slash') oeil1.className='fa fa-eye';
+        if(statut_oeil1=='fa fa-eye') oeil1.className='fa fa-eye-slash';
+        if (input.type === 'password')
+        { 
+            input.type = "text"; 
+        } 
+        else
+        { 
+            input.type = "password"; 
+        } 
+    };
 };
 

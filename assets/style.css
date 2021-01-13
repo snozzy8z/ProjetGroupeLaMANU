@@ -127,32 +127,31 @@ footer .footer-bottom a {
     text-decoration: none;
 }
 
-.password + .unmask {
-    position:absolute;
-    right: 68px; top: 7px;
-    width: 25px;
-    height: 25px;
-    text-indent: -9999px;
-    background: #aaa;
-    border-radius: 50%;
-  }
-  .password + .unmask:before {
-    content: "";
-    position:absolute;
-    top:4px; left:4px;
-    z-index:1;
-    width: 17px;
-    height: 17px;
-    background: #e3e3e3;
-    border-radius: 50%;
-  }
-  .password[type="text"] + .unmask:after {
-    content: "";
+.inputglobconnexion{
     position: absolute;
-    top:6px; left:6px;
-    z-index: 2;
-    width: 13px;
-    height: 13px;
-    background: #aaa;
-    border-radius: 50%;
-  }
+    top: 59.5%;
+    color:black;
+    left: 86%;
+    font-size: 21px; 
+    width: 50px;
+    }
+
+.inputglobinscription1{
+        position: absolute;
+        top: 69%;
+        color:black;
+        left: 86%;
+        font-size: 21px; 
+        width: 50px;
+}
+
+.inputglobinscription2{
+    position: absolute;
+    top: 78.5%;
+    color:black;
+    left: 86%;
+    font-size: 21px; 
+    width: 50px;
+}
+
+    
