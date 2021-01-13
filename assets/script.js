@@ -41,9 +41,17 @@ test.addEventListener("change", function(){
     document.getElementById("puissancealim").innerHTML = test.value;
 })
 //chargement Json pour remplir page
-// var requestURL = './assets/listearticle.json';
-var requestURL = 'https://raw.githubusercontent.com/snozzy8z/ProjetGroupeLaMANU/J%C3%A9remy/assets/listearticle.json';
-var request = new XMLHttpRequest();
+fetch("./assets/listarticle.json").then(
+    response =>{
+        console.log(response);
+    }
+)
+// var requestURL = '/assets/listearticle.json';
+// var requestURL = 'https://raw.githubusercontent.com/snozzy8z/ProjetGroupeLaMANU/J%C3%A9remy/assets/listearticle.json';
+// var requesturl = test;
+var truc= JSON.parse(test);
+console.log(truc);
+
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
@@ -54,7 +62,11 @@ request.onload = function() {
 //on se balade et on crée les cards necessaires
   function remplirliste(articles){
       for (const article of articles) {
-          console.log(article.idArticle)          
+          console.log(article.idArticle);
+          //on crée l'architecture de la card article
+          var card = document.createElement("article");
+          card.setAttribute("class", "card m-2 col-12 border-0")
+
 
       }
   }
