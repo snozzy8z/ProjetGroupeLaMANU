@@ -3,7 +3,9 @@ $(function() {
 //on charge tout le json au chargement de la page
 ChargementJson("all");
 //ajout event listener sur menu pour filtres du aside
+document.getElementById("menu-piece").addEventListener("click", function () {ChargementJson("all")});
 var dropdownmenu = document.getElementsByClassName("dropdown-item");
+
 for (const key in dropdownmenu) {
     if (Object.hasOwnProperty.call(dropdownmenu, key)) {
         const element = dropdownmenu[key];
@@ -57,6 +59,7 @@ fetch("./assets/listearticle.json")
 .then(data => {
     for (const article of data) {
         var card="";
+        console.log(typechargement)
         switch (typechargement) {            
             case "alim":
                 if (article.typeArticle.type == typechargement) {  
@@ -83,7 +86,7 @@ fetch("./assets/listearticle.json")
                 break;
         
             default:
-                card = CreateArticle(article);        
+                card = CreateArticle(article);
                 break;
         }
         // on crée l'article et on l'affiche à la suite des autres dans le main 

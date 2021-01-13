@@ -1,3 +1,10 @@
+@media all and (min-width: 992px) {
+	.dropdown-large{ 
+        min-width:500px;
+    }
+    aside{min-height: 400px ;}
+}
+
 main .card{
     background: #F2F6EE;
 }
@@ -15,9 +22,7 @@ a{
 .dropdown-large{ padding:20px;
     min-width:500px; }
 
-@media all and (min-width: 992px) {
-	.dropdown-large{ min-width:500px; }
-}
+
 
 .menugauche{
     display :none;
